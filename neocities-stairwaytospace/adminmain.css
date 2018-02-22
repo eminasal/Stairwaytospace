@@ -1,0 +1,411 @@
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  #menu, main, #content, header, footer {
+    width:100%;
+  }
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-attachment: fixed;
+  background-image: url("nebula1.png");
+  background-size: 100% 100%;
+   /* font-size:1vw; */
+  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-weight:normal;
+  font-style:normal;
+  width:90%;
+
+}
+
+main
+	{
+	  float:center;
+	  padding:5% 0% 0% 0%;
+		border: solid #ffffff 0px; 
+		width: 100%;
+		height:80%;
+		color: #333; 
+		font-size: 90%; 
+		font-family: 'Raleway', Georgia, sans-serif; 
+		margin: auto;
+		
+		}
+		
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 12%;
+   background-color: rgba(34, 37, 44, 0.7);
+   color: white;
+   text-align: center;
+    font-size:80%;
+   font-family: 'Raleway';
+  
+}
+
+header 
+{
+  display: inline-block;
+  position: fixed;
+   width: 100%;
+   height: 8%;
+  background-color:rgba(34, 37, 44, 0.9);
+   text-align: left;
+   font-size:100%;
+   font-family: 'Raleway';
+   
+}
+
+
+
+
+
+
+h1 {
+	font-size: 185%; 
+	font-weight: bold; 
+	color:rgba(218, 123, 147, 0.8);
+	font-family: 'Raleway';
+	padding: 0.5%;
+	text-align: center;
+	}
+
+
+h3 {
+	font-size: 100%; 
+	font-weight: bold; 
+	margin: 2em 0 1em 0; 
+	font-style: italic;
+	}
+p {
+	margin:0;
+	  text-align: center;
+	}
+	
+.aboutparagraph {
+  padding:3% 15% 10% 15%;
+  width:70%;
+  height:100%;  
+}
+
+#p
+{
+  background-color: rgba(249, 172, 172, 0.6);
+  color: rgb(47, 68, 84);
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 115%; 
+  box-shadow:10px 10px 5px 0px #2e151b; 
+  border-radius:0px 0px 5px 0px;
+}
+
+
+
+
+
+address {
+	font-size: 100%; 
+	font-style: normal;
+	}
+
+a {
+	color: #bc312b;
+	text-decoration: bold;
+	
+	}
+a:hover {
+	color: #e8d2d0;
+	text-decoration: none;
+	font: italic bold;
+	
+	}
+	
+	
+	 
+/* menu list  */
+
+	/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    
+}
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 10%;
+    text-align: center;
+    line-height: 200%; /* 50px */
+    font-family: 'Raleway';
+    color: #d4d4d8;
+    text-decoration: none;
+    padding: 7% 0% 7% 2%;
+}
+/*Hover state for top level links*/
+li:hover a {
+    background:#c19595;
+    color: #2e151b;
+}
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #f3f3f3;
+    color: #2e151b;
+    height: 40px;
+    line-height: 10%; /* 50px */
+}
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #c19595;
+    color: #d4d4d8;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 2 20px;
+}
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+element {
+  width=10px;
+	height=10px;
+}
+
+
+
+
+
+#element1 {
+	float:left; 
+	width=2px;
+	height=2px;}
+
+#element2 {
+	float:right;
+	width=100%; 
+	display: inline-block;
+	}
+#element1, #element2{
+	display: inline;
+}
+
+#iframe1
+            {
+                height:   50%;
+                left:     0px;
+                position: sticky;
+                top:      0px;
+                width:    50%;
+                border-radius:15px 15px 15px 15px;
+                border-color: transparent;
+                
+            }
+  
+
+	
+dl {
+	margin-top: 1em;
+	}
+dt {
+	margin-top: 0.5em;
+	}
+
+#menu a {
+	color: #333;
+	}
+	
+
+
+
+#video
+{
+  position: absolute; 
+  float="center";
+}
+
+#background
+{
+  background-position:left top;
+  background-size: 100%;
+}
+
+		
+
+
+
+
+#menuaaa {
+	float: left; 
+	padding :2% 0% 0.5% 0%; 
+	border-right:  0.5px /* solid*/;
+	margin:0%;   
+	width: 20%;
+	text-align: center;
+	color: #2f4454;
+	font-weight: bold;
+	background-color: rgba(249, 172, 172, 0.65);   /* #2e151b; #1c3334; */
+}
+	
+#content {
+  float:right;
+	margin:0%; 
+	height:60%;
+	width: 65%;
+	color:#7a7a7a;
+	border-left:  0.5px /* solid*/ ; 
+	padding :2% 10% 15% 2%;
+	}
+	
+	#menu, content{
+	display: inline;
+}
+	
+	/* search */
+	
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 80%;
+}
+
+
+
+
+
+
+h2 {
+	font-size: 180%; 
+	color:rgba(155, 180, 255, 1);
+	font-family: 'Raleway';
+	padding: 1%;
+	text-align: center;
+	
+
+	}
+
+
+
+
+div.flash - error, div.flash - notice, div.flash - success
+{
+padding:
+    .8em;
+    margin - bottom : 1em;
+border:
+    2px solid #ddd;
+}
+div.flash - error
+{
+background:
+    #FBE3E4;
+color:
+    # 8a1f11;
+    border - color : #FBC2C4;
+}
+div.flash - notice
+{
+background:
+    #FFF6BF;
+color:
+    # 514721;
+    border - color : #FFD324;
+}
+div.flash - success
+{
+background:
+    #E6EFC2;
+color:
+    # 264409;
+    border - color : #C6D880;
+}
+div.flash - error a
+{
+color:
+    # 8a1f11;
+}
+div.flash - notice a
+{
+color:
+    # 514721;
+}
+div.flash - success a
+{
+color:
+    # 264409;
+}
+div.form.rememberMe label
+{
+display:
+    inline;
+}
+div.view
+{
+
+border:
+    1px solid #C9E0ED;
+}
+
+
+@media(max - width : 767px)
+{
+    body
+    {
+    padding:
+        0;
+    }
+}
+li.showlink
+{
+color:
+    # 006600;
+}
+li.hidelink
+{
+color:
+    # 990000;
+}
+
+
+
+

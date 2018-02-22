@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo3.png">
+    <meta name="viewport" content="width=device-width">
+    <link href="profile.css" rel="stylesheet" type="text/css" media="all">
+    <link href="formstyle.css" rel="stylesheet" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Barcode+39+Text|Open+Sans|Raleway|Roboto|Ubuntu&amp;subset=latin-ext" rel="stylesheet">
+    <title>  Stairway to space </title>
+    <header style="position: top;">
+      <div id="element1">
+<a href="https://stairwaytospace.neocities.org"> 
+   <script>	  
+	  function logo() {
+	    var image = document.getElementById('logostranice');
+        var d = new Date();
+        var n = parseInt(d.getMonth());
+        if(n==0)
+          image.src ="praznici.png";
+        else if (n==11)
+          image.src ="praznici.png";
+        else
+          image.src ="logo3.png";
+      logo= function(){}  
+    }
+    
+	</script>
+	
+  <img id="logostranice" onload=logo(); src="logo3.png"   width=75% height=75%>
+ 
+	 </a> 
+	 </div>
+      <div id="element2">
+        <ul >
+          <li><a href="about.html"> About</a></li>
+          <li><a href="profile.html">Spacebook </a></li>
+          <li ><a href="register.html"> Register</a></li>
+          <li ><a href="signin.html">Sign in</a></li>
+        </ul>
+        <br> <br>
+      </div>
+    </header>
+  </head>
+  <body>
+    <main>
+      <!-- forma -->
+      <div class="container" style="height:75%">
+        <div class="wrapper">
+          <h2> Register </h2>
+          <h5 > Please fill in your information </h5>
+          <form  action="profile.html" method=post>
+            <div>
+              <label for="first_name">First Name</label><br>
+              <input type="text" class="fields" id="first_name" name="first_name"  placeholder="First Name" />
+            </div>
+            <div>
+              <label for="last_name">Last Name</label><br>
+              <input type="text" class="fields" id="last_name" name="last_name"   placeholder="Last Name" />
+            </div>
+            <div>
+              <label for="mail">E-mail</label><br>
+              <input type="email" class="fields" id="mail" name="user_mail"  value="xxxx@mail.com" placeholder="xxxx@mail.com" />
+            </div>
+            <div>
+              <label for="birthday">Date of Birth</label><br>
+              <input type="date" class="fields" id="birthday"  value="01.06.1996" name="birthday"/>
+              
+            </div>
+            <div>
+              <label for="password">Password</label><br>
+              <input type="password" class="fields" id="password" name="password"  placeholder="*******" />
+            </div>
+            <div >
+              <input type='button' value='Submit' onclick='displayFormContents(this.form);return false;' 
+              style="background-color: #da7b93; width: 100%; color: white; font-size: 1.7em; font-weight: bold;
+                            border: 0.063em solid #da7b93;  float:center; color: #333; "/>
+              <script type="text/javascript">
+                function displayFormContents(someForm) {
+                var out = 'Welcome to our community ';
+                
+                var firstname =someForm.elements[0].value;
+                var lastname = someForm.elements[1].value;
+                var email= someForm.elements[2].value;
+                var date=someForm.elements[3].value;
+                var password = someForm.elements[4];
+                out+= firstname + ' ' + lastname +'. Now we will redirect you to your profile. ' ;
+                localStorage.setItem("firstname", firstname);
+                localStorage.setItem("lastname", lastname);
+                localStorage.setItem("date", date);
+                localStorage.setItem("email", email);
+                alert(out);
+                window.location.href = "profile.html";
+                }
+              </script>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer style="position: bottom;">
+      <p>
+        If you would like to work with us or just say hello please contact us.
+      </p>
+      <p class="copyright">
+        Copyright 2017. Stairway to space.  All Rights Reserved.
+      </p>
+      <p> Designed by EminaSal </p>
+    </footer>
+  </body>
+</html>

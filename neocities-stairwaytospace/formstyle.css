@@ -1,0 +1,83 @@
+body {
+  background-color: lightblue;
+  font-family: 'Raleway', sans-serif;;
+}
+.container {
+  height: 70%;
+  width: 30%;
+  min-width: 20%;
+  min-height: 60%;
+  background-color: #fff;
+  /* center div horizontally and vertically */
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  box-shadow: 0.500em 0.500em 0.313em -0.125em #376e6F;
+}
+.wrapper {
+  padding: 0 10% 0 10%;
+}
+.wrapper h2 {
+  text-align: center;
+}
+.wrapper h5 {
+  text-align: center;
+}
+.wrapper form {
+  width: 18em;
+  margin: 0 auto;
+}
+.fields {
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  width: 100%;
+  height: 2em;
+  margin-bottom: 1.2em;
+}
+
+.fields:hover {
+  border-color: #376e6F;
+}
+.fields:focus {
+  outline: none !important;
+  border: 2px solid #376e6F;
+  color: black;
+}
+
+form div label {
+  color: #376e6F;
+  font-size: .84em;
+  font-weight: bold;
+}
+
+.button
+{
+  background-color: #da7b93;
+  width: 100%;
+
+  font-size: 1.7em;
+  font-weight: bold;
+  border: 0.063em solid #da7b93;
+  
+  color: #333; 
+}
+
+
+
+/* button ruleset */
+button {
+  background-color: #da7b93;
+  width: 100%;
+  color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+  border: 0.063em solid #da7b93;
+  float:center;
+  color: #333; 
+}
+button:hover {
+    background-color: #2e151b;
+    border: 0.063em solid #2e151b;
+    box-shadow: 0 0.75em 1em 0 rgba(0,0,0,0.24), 0 1.063em 3.125em 0 rgba(0,0,0,0.19);
+}

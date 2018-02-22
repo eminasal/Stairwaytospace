@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <link href="style.css" rel="stylesheet" type="text/css" media="all">
+      <link href="formstyle.css" rel="stylesheet" type="text/css" media="all">
+       <link rel="icon" href="logo3.png">
+      <link href="https://fonts.googleapis.com/css?family=Lato|Libre+Barcode+39+Text|Open+Sans|Raleway|Roboto|Ubuntu&amp;subset=latin-ext" rel="stylesheet">
+      <title>  Stairway to space </title>
+      <header style="position: top;">
+         <div id="element1">
+     <a href="https://stairwaytospace.neocities.org"> 
+   <script>	  
+	  function logo() {
+	    var image = document.getElementById('logostranice');
+        var d = new Date();
+        var n = parseInt(d.getMonth());
+        if(n==0)
+          image.src ="praznici.png";
+        else if (n==11)
+          image.src ="praznici.png";
+        else
+          image.src ="logo3.png";
+      logo= function(){}  
+    }
+    
+	</script>
+	
+  <img id="logostranice" onload=logo(); src="logo3.png"   width=75% height=75%>
+ 
+	 </a>    </div>
+         <div id="element2">
+            <ul >
+               <li><a href="about.html"> About</a></li>
+               <li><a href="spacebook.html">Spacebook </a></li>
+               <li ><a href="register.html"> Register</a></li>
+               <li ><a href="signin.html">Sign in</a></li>
+         
+            </ul>
+            <br> <br>
+         </div>
+      </header>
+   </head>
+   <body>
+      <main>
+         <!-- forma -->
+         
+         <div class="container" style="height:400px;">
+         <br> <br>
+            <div class="wrapper">
+               <h2> Sign in  </h2>
+               <form   method=post>
+               <br>
+                  <div>
+                     <label for="mail">E-mail</label><br>
+                     <input type="email" class="fields" id="mail" name="user_mail"  placeholder="xxxx@mail.com" />
+                  </div>
+                  <br>
+                  <div>
+                     <label for="password">Password</label><br>
+                     <input type="password" class="fields" id="password" name="password"  placeholder="*******" />
+                  </div> <br><br>
+                  <div > 
+                     <input type='button' class="button" value="Sign in"  onclick='redirect(this.form);return false;'
+                     style="background-color: #da7b93; width: 100%; color: white; font-size: 1.7em; font-weight: bold;
+                            border: 0.063em solid #da7b93;  float:center; color: #333; "/>  
+                     <script type="text/javascript"> function redirect(someForm) {
+                        var email =someForm.elements[0].value;
+                        var password = someForm.elements[1].value;
+                        
+                        
+                        if(email === "admin@admin.com")
+                        {
+                          if(password==="admin123")
+                            window.location.href = "admin.html";
+                        }
+                        else    
+                            alert("Molimo Vas da pazljivo unesete podatke");
+                        
+                      }
+                     </script>
+                      
+                      
+                     
+                  </div>
+               </form>
+            </div>
+         </div>
+      </main>
+      
+      <footer style="position: bottom;">
+         <p>
+            If you would like to work with us or just say hello please contact us.
+         </p>
+         <p class="copyright">
+            Copyright 2017. Stairway to space.  All Rights Reserved.
+         </p>
+         <p> Designed by EminaSal </p>
+      </footer>
+   </body>
+</html>

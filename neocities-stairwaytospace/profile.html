@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+
+	<meta charset="UTF-8" name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+ <link rel="icon" href="logo3.png">
+	<link href="profile.css" rel="stylesheet" type="text/css" media="all"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato|Libre+Barcode+39+Text|Open+Sans|Raleway|Roboto|Ubuntu&amp;subset=latin-ext" rel="stylesheet">
+	<title>  Stairway to space </title>
+	
+		<script src="snow.js"></script>
+	<header style="position: top;">
+	<div id="element1">
+  <a href="https://stairwaytospace.neocities.org"> 
+   <script>	  
+	  function logo() {
+	    var image = document.getElementById('logostranice');
+        var d = new Date();
+        var n = parseInt(d.getMonth());
+        if(n==0)
+          image.src ="praznici.png";
+        else if (n==11)
+          image.src ="praznici.png";
+        else
+          image.src ="logo3.png";
+      logo= function(){}  
+    }
+    
+	</script>
+	
+  <img id="logostranice" onload=logo(); src="logo3.png"   width=75% height=75%>
+ 
+	 </a> 
+
+	</div> 
+	
+	<div id="element2">
+	<ul >
+	          <li ><a href="index.html"> Home  </a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="profile.html">Spacebook </a></li>
+            <li ><a href="signin.html">Log out</a></li>
+            
+    </ul>
+	<br> <br>
+	</div>
+	</header>
+	
+</head>
+<body> 
+
+<main>
+
+
+
+
+
+<div id="menu">
+<br>
+<h2> 
+<div id="slika"> 
+
+Profile picture:
+<br><br>
+<img class="profilePicture" alt=""> <br>
+
+<input type="file" name="profilePicture" accept="image/* "  onchange="previewFile()"> 
+<script>
+   function previewFile(){
+       var preview = document.querySelector('.profilePicture'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+  }
+
+  previewFile();  //calls the function named previewFile()
+  </script>
+  
+  </div>
+
+<br><br> 
+<div id="ime"></div> 
+<div id="prezime"></div> 
+<br> <br>
+ Birth date: 
+<div id="datum" >  </div>
+<br>
+ Contact:
+<div id="email"></div>
+
+</h2>
+
+<script>
+document.getElementById("ime").innerHTML = localStorage.getItem("firstname");
+</script>
+
+<script>
+document.getElementById("prezime").innerHTML = localStorage.getItem("lastname");
+</script>
+
+<script>
+document.getElementById("datum").innerHTML = localStorage.getItem("date");
+</script>
+
+<script>
+document.getElementById("email").innerHTML = localStorage.getItem("email");
+</script>
+
+</div>
+
+<div id="content">
+
+<h2 align=left style="text-align:left"> <span style="background-color:rgba(99, 99, 99, 0.7); padding:2%;" >&nbsp; &nbsp; Other users &nbsp; &nbsp; </span>   </h2>
+
+<p align=left > 
+     <img  src="Profiles/deadpool.jpg" width="10%" height="10%"> 
+    <img src="Profiles/wolverine.jpg"   title="Wolverine" width="10%" height="10%" >  
+    <img src="Profiles/thor.png" width="10%" height="10%"> 
+    <img src="Profiles/capamerica.png" width="10%" height="10%"> 
+   
+
+  </p>
+  <p align=left >   
+    <img src="Profiles/hulk.png" width="10%" height="10%"> 
+    <img src="Profiles/ironman.png" width="10%" height="10%"> 
+    <img src="Profiles/flash.png" width="10%" height="10%"> 
+    <img src="Profiles/gotg.jpg" width="10%" height="10%"> 
+  </p>
+
+</div>
+</main>
+
+
+
+<footer style="position: bottom;">
+  <p>
+    If you would like to work with us or just say hello please contact us.
+  </p>
+
+
+
+  <p class="copyright">
+    Copyright 2017. Stairway to space.  All Rights Reserved.
+  </p>
+  <p> Designed by EminaSal </p>
+</footer>
+
+</main>
+</body>
+</html>
